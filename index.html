@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/output.css" />
+
+    <!-- FONTAWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- TOASTIFY -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+
+    <title>Dev Burger</title>
+  </head>
+  <body>
+    <header
+      class="header w-full h-[420px] bg-zinc-900 bg-home bg-cover bg-center"
+    >
+      <div
+        class="bg-head w-full h-full flex flex-col justify-center items-center"
+      >
+        <img
+          src="./assets/images/hamb-1.png"
+          alt=""
+          class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200"
+        />
+
+        <h1 class="title text-4xl mt-4 mb-2 font-bold text-white">
+          Dev Burger
+        </h1>
+
+        <span class="text-white font-medium">
+          Rua dev 10, Campo Brande - MS
+        </span>
+
+        <div
+          class="bg-green-600 px-4 py-1 rounded-lg mt-5 text-white font-bold"
+          id="date-span"
+        >
+          Seg à Dom - 18:00 às 22:00
+        </div>
+      </div>
+    </header>
+
+    <h2 class="title text-2xl md:text-3xl font-bold text-center mt-9 mb-6">
+      Conheça nosso menu
+    </h2>
+
+    <div class="menu" id="menu">
+      <main
+        class="items grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16"
+      >
+        <div class="item flex gap-2">
+          <img
+            src="./assets/images/hamb-1.png"
+            alt=""
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+          />
+
+          <div class="content-item">
+            <p class="font-bold">Hamburger Samsh</p>
+
+            <div class="text-sm">
+              Pão levinho de fermentação natural de Trigo, burger 160g, queijo
+              prato e maionese da casa.
+            </div>
+
+            <div
+              class="footer-item flex items-center gap-2 justify-between mt-3"
+            >
+              <p class="value font-bold text-lg">R$ 18.90</p>
+
+              <button
+                class="add-btn bg-gray-900 px-5 rounded"
+                data-name="Hamgurger Smash"
+                data-price="18.90"
+              >
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="item flex gap-2">
+          <img
+            src="./assets/images/hamb-2.png"
+            alt=""
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+          />
+
+          <div class="content-item">
+            <p class="font-bold">Hamburger Duplo</p>
+
+            <div class="text-sm">
+              Pão levinho de fermentação natural de Trigo, burger 160g, queijo
+              prato e maionese da casa.
+            </div>
+
+            <div
+              class="footer-item flex items-center gap-2 justify-between mt-3"
+            >
+              <p class="value font-bold text-lg">R$ 32.90</p>
+
+              <button
+                class="add-btn bg-gray-900 px-5 rounded"
+                data-name="Hamgurger Duplo"
+                data-price="32.90"
+              >
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="item flex gap-2">
+          <img
+            src="./assets/images/hamb-3.png"
+            alt=""
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+          />
+
+          <div class="content-item">
+            <p class="font-bold">Hamburger Salad</p>
+
+            <div class="text-sm">
+              Pão levinho de fermentação natural de Trigo, burger 160g, queijo
+              prato e maionese da casa.
+            </div>
+
+            <div
+              class="footer-item flex items-center gap-2 justify-between mt-3"
+            >
+              <p class="value font-bold text-lg">R$ 35.90</p>
+
+              <button
+                class="add-btn bg-gray-900 px-5 rounded"
+                data-name="Hamgurger Salad"
+                data-price="35.90"
+              >
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="item flex gap-2">
+          <img
+            src="./assets/images/hamb-4.png"
+            alt=""
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+          />
+
+          <div class="content-item">
+            <p class="font-bold">Hamburger</p>
+
+            <div class="text-sm">
+              Pão levinho de fermentação natural de Trigo, burger 160g, queijo
+              prato e maionese da casa.
+            </div>
+
+            <div
+              class="footer-item flex items-center gap-2 justify-between mt-3"
+            >
+              <p class="value font-bold text-lg">R$ 16.90</p>
+
+              <button
+                class="add-btn bg-gray-900 px-5 rounded"
+                data-name="Hamgurger"
+                data-price="16.90"
+              >
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <div
+      class="modal-view bg-black/50 w-full h-full fixed top-0 left-0 z-20 hidden items-center justify-center"
+    >
+      <div class="modal bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
+        <h2 class="title text-center font-bold text-2xl mb-2">Seu Carrinho</h2>
+
+        <div
+          class="items flex justify-between mb-2 flex-col"
+          id="cart-items"
+        ></div>
+
+        <p class="font-bold">
+          Total:
+          <span id="cart-total">0.00</span>
+        </p>
+
+        <div class="font-bold mt-4">Endereço de entrega:</div>
+        <input
+          type="text"
+          placeholder="Digite seu endereço completo..."
+          id="address"
+          class="w-full border-2 p-1 rounded my-1"
+        />
+
+        <p class="text-red-500 hidden" id="address-warning">
+          Digite seu endereço completo!
+        </p>
+
+        <div class="btns flex items-center justify-between mt-5 w-full">
+          <button
+            id="close-modal-btn"
+            class="border border-gray-400 rounded px-4 py-1 hover:border-gray-300 duration-200"
+          >
+            Fechar
+          </button>
+          <button
+            id="checkout-btn"
+            class="bg-green-500 hover:bg-green-400 duration-200 text-white px-4 py-1 rounded"
+          >
+            Finalizar pedido!
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <footer
+      class="footer w-full bg-red-500 py-3 fixed bottom-0 z-10 text-center"
+    >
+      <button class="text-white font-bold" id="cart-btn">
+        <span id="cart-count"> ( 0 ) </span>
+        Ver meu carrinho
+
+        <i class="fa fa-cart-plus text-lg text-white"></i>
+      </button>
+    </footer>
+
+    <!-- TOASTIFY -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+
+    <script src="assets/script.js"></script>
+  </body>
+</html>
